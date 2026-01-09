@@ -10,7 +10,7 @@ async function generateEmail() {
     return;
   }
 
-  const response = await fetch("https://ai-email-generator.onrender.com/api/email/generate", {
+  const response = await fetch("/api/email/generate", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
